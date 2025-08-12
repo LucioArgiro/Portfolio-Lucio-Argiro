@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALDev.com</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/estilo.css">
+</head>
+
+<body>
+  <header>
+    <div class="Encabezado">
+      <h1>ALDev</h1>
+    </div>
+    <div class="nav-container">
+      <nav>
+        <a href="#">Inicio</a>
+        <a href="./pages/proyectos.html">Proyectos</a>
+        <a href="./pages/Contacto.html">Contacto</a>
+      </nav>
+    </div>
+    <button id="theme-toggle">🌙</button>
+  </header>
+  <main>
+    <section class="presentacion">
+      <div class="presentacion-texto">
+        <p class="pre-titulo">Hola mi nombre es Lucio 👋</p>
+        <h1>Desarrollador<br>web Junior</h1>
+        <p class="descripcion">
+          ¡Hola! Soy Lucio Alejandro Argiro, un desarrollador web junior apasionado por construir el lado visible de la
+          web. Mi objetivo es crear experiencias de usuario atractivas y funcionales.
+        </p>
+      </div>
+      <div class="presentacion-imagen">
+        <img src="./assets/img/imagenpersonal.jpg" alt="Imagen personal de Lucio Alejandro Argiro">
+      </div>
+    </section>
+    <section class="presentacion">
+      <h2>SOBRE MI</h2>
+      <p class="descripcion">
+        Soy un estudiante de Ingeniería en Sistemas que ha descubierto una profunda pasión por el mundo del diseño y el desarrollo web. Mi formación en ingeniería me proporciona una base sólida en la lógica y la resolución de problemas, pero es en la maquetación web donde encontré el lugar perfecto para combinar esa estructura con la creatividad y el diseño centrado en el usuario. Lo que comenzó como curiosidad, rápidamente se convirtió en un interés genuino, impulsado por mis ansias de aprender y de mantenerme al día con las nuevas tecnologías que están moldeando el futuro de la web. Actualmente, me enfoco en perfeccionar mis habilidades en la creación de interfaces intuitivas, responsivas y visualmente atractivas. Mi objetivo es transformar ideas complejas en experiencias digitales que no solo funcionen a la perfección, sino
+        que también sean un placer de usar.
+    </section>
+    <section class="proyectos">
+      <h2>Proyectos.</h2>
+      <div class="proyectos-container">
+
+        <div class="proyecto-item">
+          <a href="https://lucioargiro.github.io/menu-digital/" target="_blank">
+            <img src="./assets/img/La cava del chef/lucioargiro.github.io_menu-digital_.png"
+              alt="Vista previa del Proyecto menu-digital">
+          </a>
+          <div class="proyecto-info">
+            <h3>La cava del chef</h3>
+            <p>Diseño y maquetación de un menú digital para un restaurante de alta cocina, enfocado en una presentación
+              visual elegante y una navegación intuitiva, utilizando únicamente HTML y CSS para demostrar una sólida
+              habilidad en la construcción de interfaces desde cero.</p>
+          </div>
+        </div>
+
+        <div class="proyecto-item">
+          <a href="https://lucioargiro.github.io/tp3-flexbox-clon/" target="_blank">
+            <img src="./assets/img/EasyWeb/lucioargiro.github.io_tp3-flexbox-clon 1_.png"
+              alt="Easyweb">
+          </a>
+          <div class="proyecto-info">
+            <h3>EasyWeb</h3>
+            <p>Ejercicio de maquetación avanzada para replicar el diseño de una agencia web, demostrando un uso
+              intensivo de CSS Flexbox para crear layouts complejos y responsivos de manera precisa, con un fuerte
+              enfoque en la fidelidad visual al diseño original.</p>
+          </div>
+        </div>
+
+        <div class="proyecto-item">
+          <a href="https://lucioargiro.github.io/POKEDEX/" target="_blank"><img src="./assets/img/POKEDEX/Poxedex.jpg" alt="POKEDEX"></a>
+          <div class="proyecto-info">
+            <h3>Pokedex</h3>
+            <p>Aplicación web interactiva que consume la PokeAPI para mostrar y filtrar datos de Pokémon en tiempo real.
+              Este proyecto demuestra el manejo de JavaScript asíncrono, la manipulación del DOM y la implementación de
+              lógica de búsqueda del lado del cliente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="experiencia">
+      <h2>Experiencia</h2>
+      <div class="experiencia-container">
+
+        <div class="experiencia-tabs">
+          <ul>
+            <li><button class="tab-btn active" data-target="navatuc">Navatuc</button></li>
+            <li><button class="tab-btn" data-target="comercio">Comercio</button></li>
+          </ul>
+        </div>
+
+        <div class="experiencia-contenido">
+          <div class="content-panel active" id="navatuc">
+            <h3>Jefe de Producciones en Navatuc</h3>
+            <p class="fecha">27/03/2023 - 05/07/2024</p>
+            <ul>
+              <li>Encargado del diseño de productos y supervisión de procesos.</li>
+              <li>Responsable de la contabilidad y gestión de materiales.</li>
+              <li>Elaboración de documentos para la certificación de la norma ISO 9001.</li>
+              <li>Elaboracion e interpretación de planos</li>
+            </ul>
+          </div>
+          <div class="content-panel" id="comercio">
+            <h3>Ayudante General en M&A</h3>
+            <p class="fecha">12/02/2022 - 25/03/2023</p>
+            <ul>
+              <li>Asistencia en la gestión y organización del depósito.</li>
+              <li>Atención directa y personalizada al cliente en el punto de venta.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="habilidades">
+      <h2>Habilidades</h2>
+      <div class="habilidades-grupo">
+        <h4>Técnicas</h4>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Maquetación web</li>
+          <li>Diseño responsivo</li>
+          <li>Frameworks CSS (Bootstrap, Tailwind)</li>
+          <li>Control de versiones con Git</li>
+        </ul>
+      </div>
+      <div class="habilidades-grupo">
+        <h4>Blandas (Soft Skills)</h4>
+        <ul>
+          <li>Trabajo en equipo</li>
+          <li>Resolución de problemas</li>
+          <li>Comunicación efectiva</li>
+          <li>Pensamiento crítico</li>
+          <li>Adaptabilidad</li>
+          <li>Gestión del tiempo</li>
+          <li>Atención al detalle</li>
+        </ul>
+      </div>
+    </section>
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <p> Actualmente estoy abierto a nuevas oportunidades y colaboraciones. No dudes en enviarme un mensaje o tambien
+        puedes descargar mi currículum para saber mas sobre mi</p>
+      <form class="form-contacto">
+        <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <textarea name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+        <button type="submit" class="btn-terciario">Enviar</button>
+      </form>
+      <div class="contacto-acciones">
+        <a href="./assets/Argiro Lucio Alejandro.pdf" class="btn-descarga" download>Descargar Currículum</a>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Navegación</h4>
+        <a href="#">Inicio</a>
+        <a href="./pages/proyectos.html">Proyectos</a>
+        <a href="./pages/Contacto.html">Contacto</a>
+      </div>
+      <div class="footer-section">
+        <h4>Redes Sociales</h4>
+        <ul>
+          <a href="https://www.linkedin.com/in/lucio-alejandro-argiro-2aa049201/" target="_blank"><i
+              class="bi bi-linkedin"></i>LinkedIn</a>
+          <a href="https://github.com/LucioArgiro" target="_blank"><i class="bi bi-github"></i>GitHub</a>
+          <a href="https://x.com/argirolucio1" target="_blank"><i class="bi bi-twitter-x"></i>Twitter/X</a>
+          <a href="https://www.instagram.com/lucio_arg1/" target="_blank"><i class="bi bi-instagram"></i>Instagram</a>
+          <a href="https://www.facebook.com/lucio.argiro?locale=es_LA" target="_blank"><i
+              class="bi bi-facebook"></i>Facebook</a>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Lucio Alejandro Argiro. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <button id="btnVolverArriba" title="Volver arriba"><i class="bi bi-arrow-up-circle"></i></button>
+  <script src="./js/funcionalidad.js"></script>
+</body>
+
+</html>
