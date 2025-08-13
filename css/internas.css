@@ -399,8 +399,34 @@ footer {
     padding: 40px 5%;
   }
 }
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
 
-/* Ajustes para pantallas medianas (tablets y móviles grandes) */
+  .nav-container nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .card img {
+    max-width: 100%;
+  }
+
+  .card-content {
+    padding: 10px 0;
+  }
+}
+
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -441,7 +467,6 @@ footer {
   }
 }
 
-/* Ajustes para móviles pequeños */
 @media (max-width: 480px) {
   .proyectos {
     padding: 30px 5%;

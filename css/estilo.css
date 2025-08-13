@@ -28,7 +28,7 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
-/* ----------- HEADER ----------- */
+/*HEADER*/
 header {
   background: var(--color-card);
   padding: 15px 5%;
@@ -84,7 +84,7 @@ header button {
 header button:hover {
   transform: scale(1.1);
 }
-/* ----------- PRESENTACIÓN ----------- */
+/*PRESENTACIÓN*/
 .presentacion {
   display: flex;
   justify-content: space-between;
@@ -212,7 +212,7 @@ header button:hover {
     opacity: 0.8;
 }
 
-/* ----------- EXPERIENCIA ----------- */
+/*EXPERIENCIA*/
 .experiencia {
   padding: 50px 5%;
 }
@@ -257,7 +257,7 @@ header button:hover {
   border-radius: 10px;
 }
 
-/* ----------- HABILIDADES ----------- */
+/*HABILIDADES*/
 
 .habilidades {
     padding: 50px 5%;
@@ -312,7 +312,7 @@ header button:hover {
     color: var(--color-accent);
 }
 
-/* ----------- CONTACTO ----------- */
+/*CONTACTO */
 .contacto {
   padding: 30px 5%;
   background-color: var(--color-bg);

@@ -28,7 +28,6 @@ tabButtons.forEach(btn => {
   })
 })
 
-
 const animElements = document.querySelectorAll("section, .card, header, footer")
 function showOnScroll() {
   const triggerBottom = window.innerHeight * 0.85
@@ -47,7 +46,6 @@ animElements.forEach(el => {
 })
 window.addEventListener("scroll", showOnScroll)
 showOnScroll();
-
 
 
 const btnVolverArriba = document.getElementById("btnVolverArriba")
