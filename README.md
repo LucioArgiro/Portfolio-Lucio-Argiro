@@ -1,11 +1,6 @@
 # Portafolio Personal - Lucio Argiro
 
-Este es el repositorio de mi portafolio personal, un sitio web diseñado y codificado desde cero para mostrar mis proyectos, habilidades y mi recorrido en el mundo del desarrollo web.
-<br>
-<p align="center">
-  <a href="https://lucioargiro.github.io/Portfolio-Lucio-Argiro/" target="_blank">
-    <img src="https://img.shields.io/badge/Ver%20Sitio%20Web-En%20Vivo-4A90E2?style=for-the-badge&logo=github" alt="Ver Demo">
-  </a>
+
 </p>
 ## Sobre Este Proyecto 🚀
 Este portafolio es más que una simple galería de trabajos; es una plataforma de desarrollo personal para reflejar mi viaje y crecimiento en el desarrollo web. El objetivo principal fue crear un espacio digital único, moderno y funcional que no solo muestre mis proyectos, sino que también demuestre mis habilidades técnicas en la práctica.
@@ -29,10 +24,16 @@ A lo largo de su creación, este sitio se ha convertido en un laboratorio person
 * **Bootstrap Icons:** Para la implementación de íconos vectoriales en todo el sitio.
 ## Contacto 📬
 Puedes encontrarme en las siguientes plataformas:
-* **LinkedIn:** [Lucio Alejandro Argiro](https://www.linkedin.com/in/lucio-alejandro-argiro-2aa049201/)
-* **GitHub:** [@LucioArgiro](https://github.com/LucioArgiro)
-* **Email:** lucioargiro@gmail.com
+* **LinkedIn:** [Lucio Alejandro Argiro](https://www.linkedin.com/in/lucio-alejandro-argiro-2aa049201/)<br>
+* **GitHub:** [@LucioArgiro](https://github.com/LucioArgiro)<br>
+* **Email:** lucioargiro@gmail.com<br>
 
+Este es el repositorio de mi portafolio personal, un sitio web diseñado y codificado desde cero para mostrar mis proyectos, habilidades y mi recorrido en el mundo del desarrollo web.
+<br>
+<p align="center">
+  <a href="https://lucioargiro.github.io/Portfolio-Lucio-Argiro/" target="_blank">
+    <img src="https://img.shields.io/badge/Ver%20Sitio%20Web-En%20Vivo-4A90E2?style=for-the-badge&logo=github" alt="Ver Demo">
+  </a><br>
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
   <img width="12" />
