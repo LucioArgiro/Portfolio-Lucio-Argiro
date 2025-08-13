@@ -1,28 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('theme-toggle');
-    const htmlElement = document.documentElement
-    const toggleTheme = () => {
-        const isDarkMode = htmlElement.getAttribute('data-theme') === 'dark'
-        if (isDarkMode) {
-            htmlElement.removeAttribute('data-theme')
-            themeToggleBtn.innerHTML = '🌙'
-            localStorage.setItem('theme', 'light')
-        } else {
-            htmlElement.setAttribute('data-theme', 'dark')
-            themeToggleBtn.innerHTML = '☀️'
-            localStorage.setItem('theme', 'dark')
-        }
-    };
-    themeToggleBtn.addEventListener('click', toggleTheme)
-    const savedTheme = localStorage.getItem('theme')
-    if (savedTheme === 'dark') {
-        htmlElement.setAttribute('data-theme', 'dark')
-        themeToggleBtn.innerHTML = '☀️'
-    } else {
-        htmlElement.removeAttribute('data-theme')
-        themeToggleBtn.innerHTML = '🌙'
+    const htmlElement = document.documentElement;
+    function setTheme(mode) {
+        htmlElement.setAttribute('data-theme', mode);
+        themeToggleBtn.textContent = mode === 'dark' ? '☀️' : '🌙';
+        localStorage.setItem('theme', mode);
     }
-})
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+
+    themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = htmlElement.getAttribute('data-theme');
+        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+    });
+});
+
 const tabButtons = document.querySelectorAll(".tab-btn")
 const tabContents = document.querySelectorAll(".content-panel")
 tabButtons.forEach(btn => {

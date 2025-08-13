@@ -1,4 +1,5 @@
-:root {
+:root 
+{
 
   --color-bg: #f5f5f7;     
   --color-text: #3D4852;      
@@ -6,24 +7,33 @@
   --color-card: #ffffff;      
 }
 
-[data-theme="dark"] {
-
+[data-theme="dark"] 
+{
   --color-bg: #1A202C;     
   --color-text: #E2E8F0;     
   --color-accent: #4A90E2;      
   --color-card: #2D3748;      
 }
 
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-body {
+body 
+{
   font-family: "Poppins", sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
   transition: background 0.3s, color 0.3s;
 }
+
 /* HEADER */
-header {
+header 
+{
   background: var(--color-card);
   padding: 15px 5%;
   display: flex;
@@ -33,24 +43,28 @@ header {
   border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
-.Encabezado h1 {
+.Encabezado h1 
+{
   font-size: 1.6rem;
   color: var(--color-accent);
 }
 
-.nav-container nav {
+.nav-container nav 
+{
   display: flex;
   gap: 20px;
 }
 
-.nav-container a {
+.nav-container a 
+{
   text-decoration: none;
   color: var(--color-text);
   font-weight: 500;
   position: relative;
 }
 
-.nav-container a::after {
+.nav-container a::after 
+{
   content: "";
   position: absolute;
   width: 0;
@@ -61,11 +75,13 @@ header {
   transition: width 0.3s;
 }
 
-.nav-container a:hover::after {
+.nav-container a:hover::after
+{
   width: 100%;
 }
 
-header button {
+header button 
+{
   background: var(--color-accent);
   border: none;
   padding: 8px;
@@ -75,7 +91,8 @@ header button {
   transition: transform 0.2s;
 }
 
-header button:hover {
+header button:hover 
+{
   transform: scale(1.1);
 }
 
@@ -85,20 +102,23 @@ header button:hover {
     background: var(--color-bg);
 }
 
-.proyectos h2 {
+.proyectos h2 
+{
     text-align: center;
     margin-bottom: 50px;
     font-size: 2.5rem;
     color: var(--color-text);
 }
 
-.proyectos-container {
+.proyectos-container 
+{
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.card {
+.card 
+{
     background: var(--color-card);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
@@ -110,35 +130,40 @@ header button:hover {
     padding: 20px;
 }
 
-.card:hover {
+.card:hover 
+{
     transform: translateY(-10px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
-
-.card:nth-child(even) {
+.card:nth-child(even) 
+{
     flex-direction: row-reverse;
 }
 
-.card img {
+.card img 
+{
 
     max-width: 40%;
     border-radius: 10px;
     object-fit: cover;
     
 }
-.card-content {
+.card-content 
+{
     display: flex;
     flex-direction: column;
     padding: 0 10px;
 }
 
-.card-content h3 {
+.card-content h3 
+{
     margin: 0 0 10px 0;
     color: var(--color-text);
 }
 
-.card-content p {
+.card-content p 
+{
     margin: 0 0 20px 0;
     font-size: 0.95rem;
     flex-grow: 1;
@@ -146,7 +171,8 @@ header button:hover {
 }
 
 
-.tecnologias {
+.tecnologias 
+{
     list-style: none;
     padding: 0;
     margin: 0 0 20px 0;
@@ -155,7 +181,8 @@ header button:hover {
     gap: 8px;
 }
 
-.tecnologias li {
+.tecnologias li 
+{
     background-color: var(--color-accent);
     color: white;
     padding: 4px 12px;
@@ -164,13 +191,15 @@ header button:hover {
     font-weight: 500;
 }
 
-.card-links {
+.card-links 
+{
     display: flex;
     gap: 15px;
     margin-top: auto;
 }
 
-.btn-principal {
+.btn-principal 
+{
     background: var(--color-accent);
     color: white;
     padding: 10px 14px;
@@ -180,51 +209,161 @@ header button:hover {
     transition: background 0.3s, transform 0.2s;
 }
 
-.btn-principal:hover {
+.btn-principal:hover 
+{
     transform: translateY(-2px);
+}
+
+/* CONTACTO */
+.contacto 
+{
+  padding: 60px 5%;
+  background-color: var(--color-bg);
+  text-align: center;
+}
+
+.contacto h2 
+{
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: var(--color-text);
+}
+
+.contacto p 
+{
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  color: var(--color-text);
+}
+
+.form-contacto 
+{
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--color-card);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-grupo 
+{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-grupo label 
+{
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--color-text);
+}
+
+.form-grupo input, .form-grupo textarea 
+{
+  padding: 12px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: border 0.3s, background 0.3s;
+}
+
+
+.btn-principal 
+{
+  border: none;
+  cursor: pointer;
+}
+
+.telefono-container 
+{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.telefono-container select 
+{
+  padding: 12px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: border 0.3s, background 0.3s;
+}
+
+.telefono-container input 
+{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: border 0.3s, background 0.3s;
 }
 
 /* FOOTER */
 footer {
   background: var(--color-card);
   text-align: center;
-  padding: 15px;
   font-size: 0.85rem;
   border-top: 1px solid rgba(0,0,0,0.05);
 }
 
-.footer-container {
+.footer-container 
+{
   background: var(--color-card);
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-.footer-section {
+.footer-section 
+{
   flex: 1;
   margin: 10px;
 }
-.footer-section h4 {
+.footer-section li 
+{
+  list-style: none;
+  margin: 5px 0;
+}
+.footer-section h4 
+{
   margin-bottom: 10px;
 
 }
-.footer-section a {
+.footer-section a 
+{
   display: block;
   color: var(--color-text);
   text-decoration: none;
   margin: 5px 0;
 }
-.footer-section a:hover {
+
+.footer-section a:hover 
+{
   color: var(--color-accent);
 }
-.footer-bottom {
+
+.footer-bottom 
+{
   text-align: center;
   padding: 10px 0;
   font-size: 0.8rem;
   color: #666;
 }
 
-#btnVolverArriba {
+#btnVolverArriba 
+{
   display: none;
   position: fixed; 
   bottom: 20px; 
@@ -240,43 +379,60 @@ footer {
   opacity: 0; 
 }
 
-#btnVolverArriba.visible {
+#btnVolverArriba.visible
+{
   display: block; 
   opacity: 1; 
 }
 
-#btnVolverArriba:hover {
+#btnVolverArriba:hover 
+{
   background-color: #333;
 }
+
 /* DISEÑO RESPONSIVO */
 @media (max-width: 1024px) {
   .card img {
     max-width: 50%;
   }
+  .proyectos {
+    padding: 40px 5%;
+  }
 }
 
+/* Ajustes para pantallas medianas (tablets y móviles grandes) */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
     gap: 15px;
+    text-align: center;
   }
 
   .nav-container nav {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
   }
 
   .card {
-    flex-direction: column !important;
+    flex-direction: column;
     text-align: center;
+    padding: 15px;
   }
-
+    .card:nth-child(even) {
+    flex-direction: column;
+  }
   .card img {
     max-width: 100%;
   }
 
   .card-content {
-    padding: 15px 0;
+    padding: 10px 0;
+  }
+
+  .form-contacto {
+    width: 100%;
+    padding: 20px;
   }
 
   .footer-container {
@@ -285,22 +441,39 @@ footer {
   }
 }
 
+/* Ajustes para móviles pequeños */
 @media (max-width: 480px) {
+  .proyectos {
+    padding: 30px 5%;
+  }
+
   .proyectos h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .Encabezado h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .btn-principal {
-    padding: 8px 10px;
+    padding: 7px 10px;
     font-size: 0.85rem;
   }
 
   .tecnologias li {
     font-size: 0.7rem;
-    padding: 3px 8px;
+    padding: 3px 6px;
+  }
+
+  .form-contacto {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .form-grupo input,
+  .form-grupo textarea,
+  .telefono-container input {
+    font-size: 0.9rem;
+    width: 100%;
   }
 }
