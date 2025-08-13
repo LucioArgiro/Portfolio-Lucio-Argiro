@@ -484,7 +484,9 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) 
+{
+ 
   .presentacion {
     flex-direction: column-reverse;
     text-align: center;
@@ -510,31 +512,71 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
-  header {
+@media (max-width: 480px) 
+{
+  header 
+  {
     flex-direction: column;
+    gap: 15px;
     text-align: center;
   }
 
-  .nav-container nav {
-    flex-direction: column;
+  .nav-container nav 
+  {
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
-    margin-top: 10px;
   }
 
-  .presentacion-texto h1 {
+  .card 
+  {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+    .card:nth-child(even) 
+    {
+    flex-direction: column;
+  }
+  .card img 
+  {
+    max-width: 100%;
+  }
+
+  .card-content 
+  {
+    padding: 10px 0;
+  }
+
+  .form-contacto 
+  {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .footer-container 
+  {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+  .presentacion-texto h1 
+  {
     font-size: 1.8rem;
   }
 
-  .presentacion-imagen img {
+  .presentacion-imagen img 
+  {
     max-width: 90%;
   }
 
-  .habilidades h2 {
+  .habilidades h2 
+  {
     font-size: 2rem;
   }
 
-  .habilidades-grupo h4 {
+  .habilidades-grupo h4 
+  {
     font-size: 1rem;
   }
 
@@ -544,4 +586,3 @@ footer {
     width: 100%;
     text-align: center;
   }
-}
